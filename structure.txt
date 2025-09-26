@@ -1,0 +1,18 @@
+EdgePredict_Project/
+├── 📁 edgepredict-ui/
+│   └── ... (Your React project)
+│
+├── 📁 edgepredict-backend/
+│   └── ... (Your Python API project)
+│
+└── 📁 edgepredict-engine/      (Our New C++ Project)
+    ├── 📁 src/
+    │   ├── main.cpp
+    │   └── simulation.cpp
+    ├── 📁 include/
+    │   ├── simulation.h
+    │   └── json.hpp        (This will be a third-party library for handling JSON)
+    ├── input.json          (The "API Contract" - defines the simulation)
+    ├── output.json         (The result of a successful simulation run)
+    ├── Makefile            (A simple script to compile our C++ code)
+    └── README.md           (Instructions on how to compile and run)

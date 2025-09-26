@@ -1,0 +1,18 @@
+Phase 2: Developing the Core Simulation Engine
+This is where we build the "scientific brain" of the application. It's the highly specialized, number-crunching engine that will perform the actual physics calculations.
+
+Our Approach: The Command-Line Engine
+As we discussed and as your original technical document wisely suggested, the most efficient way to develop this is to first create a standalone, command-line tool.
+
+This approach allows us to focus 100% on the complex mathematics and physics algorithms without worrying about the web interface. We can rapidly test, validate, and refine the core science.
+
+The "API Contract" for the Engine
+This command-line engine will work based on a very simple and clear contract:
+
+Input: We will give it a single input.json file. This file will contain all the parameters that a user would normally enter on the "Create New Simulation" page (tool geometry, material properties, cutting parameters, etc.).
+
+Process: The C++ or Fortran program will read the input.json, perform all the complex Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD) calculations, and simulate the cutting process from start to finish.
+
+Output: When it's done, the engine will produce a single output.json file. This file will contain all the results that our React frontend needs to display on the results page (the final KPI metrics, the time-series data for the charts, etc.).
+
+This simple "file-in, file-out" approach makes the engine incredibly easy to test and, later, to integrate into our backend via the Job Queue.

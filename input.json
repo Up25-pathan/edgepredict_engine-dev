@@ -1,0 +1,33 @@
+{
+  "simulation_id": "sim_1758206875566",
+  "tool_geometry": {
+    "type": "End Mill",
+    "diameter_mm": 10.0,
+    "flute_count": 4,
+    "helix_angle_deg": 30.0
+  },
+  "tool_material": {
+    "name": "Tungsten Carbide",
+    "youngs_modulus_gpa": 550.0,
+    "yield_strength_mpa": 4500.0,
+    "thermal_conductivity_w_mk": 110.0
+  },
+  "workpiece_material": {
+    "name": "Aluminum 6061-T6",
+    "johnson_cook_params": {
+      "A": 275.0,
+      "B": 450.0,
+      "n": 0.35
+    }
+  },
+  "cutting_parameters": {
+    "spindle_speed_rpm": 8000.0,
+    "feed_rate_mm_min": 1200.0,
+    "axial_depth_mm": 5.0,
+    "radial_depth_mm": 2.0
+  },
+  "simulation_settings": {
+    "duration_sec": 120.0,
+    "time_steps": 100
+  }
+}
